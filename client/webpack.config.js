@@ -23,10 +23,10 @@ module.exports = () => {
         template: "./index.html",
         title: "Webpack Plugin",
       }),
-      new InjectManifest({
-        swSrc: "./src-sw.js",
-        swDest: "service-worker.js",
-      }),
+      // new InjectManifest({
+      //   swSrc: "./src-sw.js",
+      //   swDest: "service-worker.js",
+      // }),
       new WorkboxPlugin.GenerateSW(),
       new WebpackPwaManifest({
         name: "TODOs",
