@@ -27,5 +27,8 @@ warmStrategyCache({
 registerRoute(({ request }) => request.mode === "navigate", pageCache);
 
 // TODO: Implement asset caching
-offlineFallback();
+workbox.recipes.offlineFallback({
+  pageFallback: "./index.html",
+});
+
 registerRoute();
