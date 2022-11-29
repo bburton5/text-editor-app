@@ -37,6 +37,7 @@ module.exports = () => {
         start_url: "./",
         // scope: "./",
         publicPath: "./",
+        fingerprints: false,
         icons: [
           {
             src: path.resolve("./src/images/logo.png"),
