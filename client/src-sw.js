@@ -4,8 +4,6 @@ const { registerRoute, setDefaultHandler } = require("workbox-routing");
 const { CacheableResponsePlugin } = require("workbox-cacheable-response");
 const { ExpirationPlugin } = require("workbox-expiration");
 const { precacheAndRoute } = require("workbox-precaching/precacheAndRoute");
-// import {setDefaultHandler} from 'workbox-routing';
-// import {NetworkOnly} from 'workbox-strategies';
 
 precacheAndRoute(self.__WB_MANIFEST);
 
