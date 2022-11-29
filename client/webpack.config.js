@@ -27,7 +27,7 @@ module.exports = () => {
         swSrc: "./src-sw.js",
         swDest: "src-sw.js",
       }),
-      new WorkboxPlugin.GenerateSW(),
+      // new WorkboxPlugin.GenerateSW(),
       new WebpackPwaManifest({
         name: "TODOs",
         short_name: "TODOs",
@@ -35,7 +35,7 @@ module.exports = () => {
         background_color: "#7eb4e2",
         theme_color: "#7eb4e2",
         start_url: "./",
-        scope: "./",
+        // scope: "./",
         publicPath: "./",
         icons: [
           {
